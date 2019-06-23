@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style type="text/css">
+    .card-img-top{
+      width:90%;
+      height: 300px;
+      id: i;
+    }
+    .card-body{
+      height: 38px;
+    }
+.card-text{
+  position: relative;
+  bottom: 27px;
+  width: 253px;
+  height: 50px;
+  right: 18px;
+}
+ .color-change-2x {
+            animation: color-change-2x 2s linear infinite alternate both;
+}
+@keyframes color-change-2x {
+  0% {
+    background: #74ebd5;
+  }
+  100% {
+    background:#acb6e5;
+  }
+}
+  </style>
+
+  <title>BOOKS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="icon" type="image" href="images/book1.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body  class="color-change-2x"> 
+   <div ng-app="myApp" ng-controller="myCtrl">
+    <div  style="background-image: url('images/div11.jpg'); width: 100%; height: 104px; background-repeat: no-repeat; background-size: cover;">
+<div class="container">
+  <nav class="navbar navbar-expand-sm">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><img src="images/imageedit_3_9236938007.png" width="250px" height="100px"></a>
+    </div>
+    <ul class="navbar-nav" style="margin-left: 50px; margin-top: 0px; font-family: verdana;font-size: 18px;">
+      <li class="nav-item"><a class="nav-link"href="index.html">HOME</a></li>
+      <li class="nav-item"><a class="nav-link" href="books.html">BOOKS</a></li>    
+      <li class="nav-item"><a class="nav-link" href="vendors.html">VENDORS</a></li>
+      <li class="nav-item"><a class="nav-link" href="tips.html">TIPS</a></li>
+      <li class="nav-item"><a class="nav-link" href="blogs.html">BLOG</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      <li class="nav-item"><a class="nav-link" href="login.html" style="font-size: 15px;color: black;"><span class="glyphicon glyphicon-log-in"></span><b> Login</b></a></li>
+      <li class="nav-item"><a class="nav-link" href="register.html" style="background-color:#ff471a;font-size: 15px;color: white;border-radius: 15px;"><span class="glyphicon glyphicon-user"></span><b> Register</b></a></li>&nbsp;&nbsp;
+            <li class="nav-item"><a class="nav-link" href="contact.html"> <a href="#" class="btn btn-info btn-lg" style="position: relative;bottom: 20px;border-radius: 15px;">
+          <span class="glyphicon glyphicon-shopping-cart"></span>Cart {{ count }}
+        </a> </a></li>
+
+    </ul>
+  </div>
+</nav>
+
+</div>
+
+</div><br>
+
+ <div class="container">
+ 
+<div class="bounce-top">
+   <br><hr>
+  <center><h2><b>BOOKS</b></h2></center>
+  <hr>
+  <br><br>
+  <div class="card-deck">
+    
+    <div class="card">
+      <img class="card-img-top" src="b1.jpg" id="i1">
+      <div class="card-body bounce-top" >
+        <center><h2 class="card-text"><button type="button" class="btn btn-info btn-block" href="#" ng-click="count = count + 1"><b>BUY</b></button></h2></center>
+      </div>
+    </div>
+
+   <div class="card">
+      <img class="card-img-top" src="b2.jpg" id="i2">
+      <div class="card-body">
+        <center><h2 class="card-text"><button type="button" class="btn btn-info btn-block" href="#" ng-click="count = count + 1"><b>BUY</b></button></h2></center>
+      </div>
+    </div>
+
+<div class="card">
+      <img class="card-img-top" src="b3.jpg" id="i3">
+      <div class="card-body">
+        <center><h2 class="card-text"><button type="button" class="btn btn-info btn-block" href="#" ng-click="count = count + 1"><b>BUY</b></button></h2></center>
+      </div>
+    </div>    
+ 
+    <div class="card">
+      <img class="card-img-top" src="b4.jpg" id="i4">
+      <div class="card-body">
+        <center><h2 class="card-text"><button type="button" class="btn btn-info btn-block" href="#" ng-click="count = count + 1"><b>BUY</b></button></h2></center>
+      </div>
+    </div>
+  </div>
+<br>
+<br><br>
+<div class="card-deck">
+   
+   <div class="card">
+      <img class="card-img-top" src="b5.jpg"  id="i5">
+      <div class="card-body">
+        <center><h2 class="card-text"><button type="button" class="btn btn-info btn-block" href="#"><b>BUY</b></button></h2></center>
+      </div>
+    </div>
+
+<div class="card">
+      <img class="card-img-top" src="b6.jpg" id="i6">
+      <div class="card-body">
+        <center><h2 class="card-text"><button type="button" class="btn btn-info btn-block" href="#"><b>BUY</b></button></h2></center>
+      </div>
+    </div>   
+    <div class="card">
+      <img class="card-img-top" src="b7.jpg" id="i7">
+      <div class="card-body">
+        <center><h2 class="card-text"><button type="button" class="btn btn-info btn-block" href="#"><b>BUY</b></button></h2></center>
+      </div>
+    </div>
+
+     <div class="card">
+      <img class="card-img-top" src="b8.jpg" id="i8">
+      <div class="card-body">
+        <center><h2 class="card-text"><button type="button" class="btn btn-info btn-block" href="#"><b>BUY</b></button></h2></center>
+      </div>
+    </div>
+  </div>
+<br><br>
+<br>
+<div class="card-deck">
+
+<div class="card">
+      <img class="card-img-top" src="b9.jpg" id="i9">
+      <div class="card-body">
+        <center><h2 class="card-text"><button type="button" class="btn btn-info btn-block" href="#"><b>BUY</b></button></h2></center>
+      </div>
+    </div>    
+<div class="card">
+      <img class="card-img-top" src="b10.jpg" id="i10">
+      <div class="card-body">
+        <center><h2 class="card-text"><button type="button" class="btn btn-info btn-block" href="#"><b>BUY</b></button></h2></center>
+      </div>
+    </div>
+
+<div class="card">
+      <img class="card-img-top" src="b11.jpg" id="i11">
+      <div class="card-body">
+        <center><h2 class="card-text"><button type="button" class="btn btn-info btn-block" href="#"><b>BUY</b></button></h2></center>
+      </div>
+    </div>    
+
+<div class="card">
+      <img class="card-img-top" src="b12.jpg" id="i12">
+      <div class="card-body">
+        <center><h2 class="card-text"><button type="button" class="btn btn-info btn-block" href="#"><b>BUY</b></button></h2></center>
+      </div>
+    </div>   
+    </div> 
+</div>
+  <br><br>
+</div>
+<br>
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.count = 0;
+});
+</script> 
+<div style="background-color:#737373; height: 200px;">
+  <div class="container" style="color: white;float: right;position: relative;left: 350px;top:50px;font-size:18px; ">
+    FAQ&nbsp;&nbsp;&nbsp;&nbsp;
+PRESS&nbsp;&nbsp;&nbsp;&nbsp;
+AFFILIATES&nbsp;&nbsp;&nbsp;&nbsp;
+ADVERTISE WITH US&nbsp;&nbsp;&nbsp;&nbsp;
+CAMPUS REP PROGRAM<br><br>
+<span style="font-size: 12px;position: relative;left: 490px;">
+<h6 style="color: #e6e6e6;font-size: 14px">Copyright © 2007-2019 BookStore, LLC</h6>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Terms&nbsp;&nbsp;
+Privacy
+</span>
+  </div>
+  <div><img src="images/book.png" style="position: relative;top: 50px;left: 100px;" width="110px" height="80px"></div>
+ <div style="position: relative;top: 70px;left: 120px;">
+    <a class="fa fa-facebook" style="font-size:25px;color:white" href="https://www.facebook.com/"></a>&nbsp;&nbsp;
+    <a class="fa fa-twitter" style="font-size:25px;color:white" href="www.twitter.com"></a>&nbsp;&nbsp;
+    <a class="fa fa-pinterest-p" style="font-size:25px;color:white" href="www.pinterest.com"></a>&nbsp;&nbsp;
+    <a class="fa fa-google-plus" style="font-size:25px;color:white" href="www.googleplus.in"></a>&nbsp;&nbsp;
+    <a class="fa fa-linkedin" style="font-size:25px;color:white" href="www.linkedin.com"></a>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+alert("Added to cart successfully");
+});
+});
+</script>
+<script>
+ $(document).ready(function(){
+ $("img").mouseenter(function(){
+ $(this).animate({
+    opacity:'0.6'
+ });  
+ });
+ $("img").mouseleave(function(){
+ $(this).animate({
+    opacity: '1'
+ });  
+ });
+ 
+ });
+</script>
+</body>
+</html>
